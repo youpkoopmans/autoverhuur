@@ -19,13 +19,13 @@ namespace autoverhuurbedrijf
 
         private void btnClean_Click(object sender, EventArgs e)
         {
-            txtFName.Text = "";
-            txtLName.Text = "";
-            dtBday.Value = DateTime.Now;
+            txtAutomerk.Text = "";
+            txtType.Text = "";
+            dtVerhuurdatum.Value = DateTime.Now;
             rbtnMale.Checked = false;
             rbtnFemale.Checked = false;
-            txtbPlace.Text = "";
-            txtAddress.Text = "";
+            txtAantal.Text = "";
+            txtVerhuur.Text = "";
             txtTele.Text = "";
             dgView.DataSource = null;
         }

@@ -156,7 +156,7 @@ namespace autoverhuurbedrijf
             string _sex;
             string _address = txtAddress.Text;
             string _telephone = txtTele.Text;
-            int _id = Convert.ToInt32(txtId.Text);
+            int _id = Convert.ToInt32(txtKlantId.Text);
             int _result = 0;
 
             if (rbtnMale.Checked == true)
@@ -211,7 +211,7 @@ namespace autoverhuurbedrijf
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            int _id = Convert.ToInt32(txtId.Text);
+            int _id = Convert.ToInt32(txtKlantId.Text);
             con.Open();
             cmd = "delete from Klanten where id = @id";
             command = new SqlCommand(cmd, con);
@@ -221,7 +221,7 @@ namespace autoverhuurbedrijf
             {
                 MessageBox.Show("Record deleted");
                 con.Close();
-                txtId.Text = "";
+                txtKlantId.Text = "";
             }
             else
             {

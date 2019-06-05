@@ -36,24 +36,19 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.dgView = new System.Windows.Forms.DataGridView();
-            this.txtTele = new System.Windows.Forms.TextBox();
-            this.rbtnFemale = new System.Windows.Forms.RadioButton();
-            this.rbtnMale = new System.Windows.Forms.RadioButton();
-            this.dtBday = new System.Windows.Forms.DateTimePicker();
-            this.txtLName = new System.Windows.Forms.TextBox();
-            this.txtbPlace = new System.Windows.Forms.TextBox();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.txtFName = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.dtVerhuurdatum = new System.Windows.Forms.DateTimePicker();
+            this.txtType = new System.Windows.Forms.TextBox();
+            this.txtAantal = new System.Windows.Forms.TextBox();
+            this.txtAutomerk = new System.Windows.Forms.TextBox();
+            this.txtVerhuurId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtVerhuur = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,101 +147,49 @@
             this.dgView.Size = new System.Drawing.Size(998, 294);
             this.dgView.TabIndex = 44;
             // 
-            // txtTele
+            // dtVerhuurdatum
             // 
-            this.txtTele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTele.Location = new System.Drawing.Point(302, 375);
-            this.txtTele.Multiline = true;
-            this.txtTele.Name = "txtTele";
-            this.txtTele.Size = new System.Drawing.Size(272, 29);
-            this.txtTele.TabIndex = 43;
+            this.dtVerhuurdatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtVerhuurdatum.Location = new System.Drawing.Point(302, 220);
+            this.dtVerhuurdatum.Name = "dtVerhuurdatum";
+            this.dtVerhuurdatum.Size = new System.Drawing.Size(272, 27);
+            this.dtVerhuurdatum.TabIndex = 40;
             // 
-            // rbtnFemale
+            // txtType
             // 
-            this.rbtnFemale.AutoSize = true;
-            this.rbtnFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnFemale.Location = new System.Drawing.Point(374, 303);
-            this.rbtnFemale.Name = "rbtnFemale";
-            this.rbtnFemale.Size = new System.Drawing.Size(77, 24);
-            this.rbtnFemale.TabIndex = 42;
-            this.rbtnFemale.TabStop = true;
-            this.rbtnFemale.Text = "Vrouw";
-            this.rbtnFemale.UseVisualStyleBackColor = true;
+            this.txtType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtType.Location = new System.Drawing.Point(302, 179);
+            this.txtType.Multiline = true;
+            this.txtType.Name = "txtType";
+            this.txtType.Size = new System.Drawing.Size(272, 29);
+            this.txtType.TabIndex = 39;
             // 
-            // rbtnMale
+            // txtAantal
             // 
-            this.rbtnMale.AutoSize = true;
-            this.rbtnMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnMale.Location = new System.Drawing.Point(302, 306);
-            this.rbtnMale.Name = "rbtnMale";
-            this.rbtnMale.Size = new System.Drawing.Size(62, 24);
-            this.rbtnMale.TabIndex = 41;
-            this.rbtnMale.TabStop = true;
-            this.rbtnMale.Text = "Man";
-            this.rbtnMale.UseVisualStyleBackColor = true;
+            this.txtAantal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAantal.Location = new System.Drawing.Point(302, 259);
+            this.txtAantal.Multiline = true;
+            this.txtAantal.Name = "txtAantal";
+            this.txtAantal.Size = new System.Drawing.Size(272, 29);
+            this.txtAantal.TabIndex = 38;
             // 
-            // dtBday
+            // txtAutomerk
             // 
-            this.dtBday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtBday.Location = new System.Drawing.Point(302, 220);
-            this.dtBday.Name = "dtBday";
-            this.dtBday.Size = new System.Drawing.Size(272, 27);
-            this.dtBday.TabIndex = 40;
+            this.txtAutomerk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutomerk.Location = new System.Drawing.Point(302, 137);
+            this.txtAutomerk.Multiline = true;
+            this.txtAutomerk.Name = "txtAutomerk";
+            this.txtAutomerk.Size = new System.Drawing.Size(272, 29);
+            this.txtAutomerk.TabIndex = 36;
             // 
-            // txtLName
+            // txtVerhuurId
             // 
-            this.txtLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLName.Location = new System.Drawing.Point(302, 179);
-            this.txtLName.Multiline = true;
-            this.txtLName.Name = "txtLName";
-            this.txtLName.Size = new System.Drawing.Size(272, 29);
-            this.txtLName.TabIndex = 39;
-            // 
-            // txtbPlace
-            // 
-            this.txtbPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbPlace.Location = new System.Drawing.Point(302, 259);
-            this.txtbPlace.Multiline = true;
-            this.txtbPlace.Name = "txtbPlace";
-            this.txtbPlace.Size = new System.Drawing.Size(272, 29);
-            this.txtbPlace.TabIndex = 38;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(302, 340);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(272, 29);
-            this.txtAddress.TabIndex = 37;
-            // 
-            // txtFName
-            // 
-            this.txtFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFName.Location = new System.Drawing.Point(302, 137);
-            this.txtFName.Multiline = true;
-            this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(272, 29);
-            this.txtFName.TabIndex = 36;
-            // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(302, 99);
-            this.txtId.Multiline = true;
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(151, 29);
-            this.txtId.TabIndex = 35;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(82, 375);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(214, 28);
-            this.label9.TabIndex = 34;
-            this.label9.Text = "Telefoon";
+            this.txtVerhuurId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVerhuurId.Location = new System.Drawing.Point(302, 99);
+            this.txtVerhuurId.Multiline = true;
+            this.txtVerhuurId.Name = "txtVerhuurId";
+            this.txtVerhuurId.Size = new System.Drawing.Size(151, 29);
+            this.txtVerhuurId.TabIndex = 35;
             // 
             // label8
             // 
@@ -256,17 +199,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(214, 28);
             this.label8.TabIndex = 33;
-            this.label8.Text = "Achternaam";
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(82, 299);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 28);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Geslacht";
+            this.label8.Text = "Type";
             // 
             // label6
             // 
@@ -276,7 +209,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(214, 28);
             this.label6.TabIndex = 31;
-            this.label6.Text = "Geboorteplaats";
+            this.label6.Text = "Aantal";
             // 
             // label5
             // 
@@ -286,7 +219,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(214, 28);
             this.label5.TabIndex = 30;
-            this.label5.Text = "Geboortedatum";
+            this.label5.Text = "Verhuur datum";
             // 
             // label4
             // 
@@ -296,17 +229,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(214, 28);
             this.label4.TabIndex = 29;
-            this.label4.Text = "Voornaam";
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(82, 337);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(214, 28);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Adres";
+            this.label4.Text = "Auto merk";
             // 
             // label2
             // 
@@ -330,6 +253,25 @@
             this.label1.Text = "Verhuur";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // txtVerhuur
+            // 
+            this.txtVerhuur.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVerhuur.Location = new System.Drawing.Point(302, 301);
+            this.txtVerhuur.Multiline = true;
+            this.txtVerhuur.Name = "txtVerhuur";
+            this.txtVerhuur.Size = new System.Drawing.Size(272, 29);
+            this.txtVerhuur.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(82, 301);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(214, 28);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Verhuur";
+            // 
             // verhuur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -343,18 +285,13 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgView);
-            this.Controls.Add(this.txtTele);
-            this.Controls.Add(this.rbtnFemale);
-            this.Controls.Add(this.rbtnMale);
-            this.Controls.Add(this.dtBday);
-            this.Controls.Add(this.txtLName);
-            this.Controls.Add(this.txtbPlace);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.txtFName);
-            this.Controls.Add(this.txtId);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.dtVerhuurdatum);
+            this.Controls.Add(this.txtType);
+            this.Controls.Add(this.txtAantal);
+            this.Controls.Add(this.txtVerhuur);
+            this.Controls.Add(this.txtAutomerk);
+            this.Controls.Add(this.txtVerhuurId);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -379,23 +316,18 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridView dgView;
-        private System.Windows.Forms.TextBox txtTele;
-        private System.Windows.Forms.RadioButton rbtnFemale;
-        private System.Windows.Forms.RadioButton rbtnMale;
-        private System.Windows.Forms.DateTimePicker dtBday;
-        private System.Windows.Forms.TextBox txtLName;
-        private System.Windows.Forms.TextBox txtbPlace;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.TextBox txtFName;
-        private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DateTimePicker dtVerhuurdatum;
+        private System.Windows.Forms.TextBox txtType;
+        private System.Windows.Forms.TextBox txtAantal;
+        private System.Windows.Forms.TextBox txtAutomerk;
+        private System.Windows.Forms.TextBox txtVerhuurId;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtVerhuur;
+        private System.Windows.Forms.Label label3;
     }
 }
