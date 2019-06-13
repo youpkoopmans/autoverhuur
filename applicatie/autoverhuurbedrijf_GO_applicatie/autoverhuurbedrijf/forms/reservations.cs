@@ -1,24 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace autoverhuurbedrijf
 {
-    public partial class reserveringen : Form
+    public partial class reservations : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source = YK\SQLEXPRESS; Initial Catalog = autoverhuur; Integrated Security = True");
         SqlCommand command = new SqlCommand();
         string cmd;
         SqlDataReader dr;
         int _result = 0;
-        public reserveringen()
+        public reservations()
         {
             InitializeComponent();
             RefreshGridView();
@@ -153,6 +153,11 @@ namespace autoverhuurbedrijf
                 con.Close();
             }
             RefreshGridView();
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

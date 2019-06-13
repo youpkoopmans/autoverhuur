@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +11,14 @@ using System.Data.SqlClient;
 
 namespace autoverhuurbedrijf
 {
-    public partial class auto : Form
+    public partial class cars : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source = YK\SQLEXPRESS; Initial Catalog = autoverhuur; Integrated Security = True");
         SqlCommand command = new SqlCommand();
         string cmd;
         SqlDataReader dr;
         int _result = 0;
-        public auto()
+        public cars()
         {
             InitializeComponent();
             RefreshGridView();
@@ -211,6 +210,16 @@ namespace autoverhuurbedrijf
                 con.Close();
             }
             RefreshGridView();
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void BtnSearch_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

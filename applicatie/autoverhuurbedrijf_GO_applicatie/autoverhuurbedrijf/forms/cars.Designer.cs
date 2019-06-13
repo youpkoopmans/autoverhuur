@@ -1,6 +1,6 @@
 ﻿namespace autoverhuurbedrijf
 {
-    partial class auto
+    partial class cars
     {
         /// <summary>
         /// Required designer variable.
@@ -48,6 +48,7 @@
             this.rbtnNee = new System.Windows.Forms.RadioButton();
             this.rbtnJa = new System.Windows.Forms.RadioButton();
             this.lblBeschikbaar = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,6 +120,7 @@
             this.btnSearch.TabIndex = 73;
             this.btnSearch.Text = "Zoeken";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // btnUpdate
             // 
@@ -298,11 +300,26 @@
             this.lblBeschikbaar.Text = "Beschikbaar";
             this.lblBeschikbaar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // auto
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.White;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.Location = new System.Drawing.Point(696, 109);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(105, 36);
+            this.btnBack.TabIndex = 78;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
+            // cars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 586);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnOverview);
@@ -324,7 +341,7 @@
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblAuto);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "auto";
+            this.Name = "cars";
             this.Text = "auto";
             ((System.ComponentModel.ISupportInitialize)(this.dgView)).EndInit();
             this.ResumeLayout(false);
@@ -354,5 +371,6 @@
         private System.Windows.Forms.RadioButton rbtnNee;
         private System.Windows.Forms.RadioButton rbtnJa;
         private System.Windows.Forms.Label lblBeschikbaar;
+        private System.Windows.Forms.Button btnBack;
     }
 }
